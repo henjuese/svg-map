@@ -252,11 +252,11 @@
 					});
 
 					obj.hover(function (e) {
-						if (this != current) {
-							this.animate({
-								fill: stateColor[this.id].hoverColor
-							}, 250);
-						}
+						// if (this != current) {
+						// 	this.animate({
+						// 		fill: stateColor[this.id].hoverColor
+						// 	}, 250);
+						// }
 						if (opt.showTip) {
 							clearTimeout(reTimer);
 							if ($('.stateTip').length == 0) {
@@ -277,11 +277,11 @@
 					});
 /*www.198zone.com 代码笔记*/
 					obj.mouseout(function () {
-						if (this != current) {
-							this.animate({
-								fill: stateColor[this.id].initColor
-							}, 250);
-						}
+						// if (this != current) {
+						// 	this.animate({
+						// 		fill: stateColor[this.id].initColor
+						// 	}, 250);
+						// }
 						// $('.stateTip').hide();
 						if (opt.showTip) {
 							reTimer = setTimeout(function () {
